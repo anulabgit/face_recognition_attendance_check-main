@@ -53,7 +53,7 @@ def detect(img ,detector,encoder,encoding_dict):
                 name = db_name
                 distance = dist
         if name == 'unknown': #알수 없는 얼굴일 경우 시스템 사용여부 확인
-            btn = messagebox.askquestion("주의", "인식할수 없는 이름 입니다.\n계속하시겠습니까?")
+            btn = messagebox.askquestion("주의", "인식할 수 없는 얼굴입니다.\n계속하시겠습니까?")
             if btn == 'no':
                 print('프로그램을 종료합니다.')
                 exit()
